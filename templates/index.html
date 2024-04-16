@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crisis Management Prediction Model</title>
+</head>
+<body>
+    <h1>Crisis Management Prediction Model</h1>
+    <form action="/" method="post">
+        <input type="number" name="case" placeholder="Enter case" required><br>
+        <input type="number" name="cc3" placeholder="Enter cc3" required><br>
+        <input type="number" name="country" placeholder="Enter country" required><br>
+        <input type="number" name="year" placeholder="Enter year" required><br>
+        <input type="number" name="systematic_crisis" placeholder="Enter systematic_crisis" required><br>
+        <input type="number" name="exch_usd" placeholder="Enter exch_usd" required step="0.0001"><br>
+        <input type="number" name="domestic_debt_in_default" placeholder="Enter domestic_debt_in_default" required><br>
+        <input type="number" name="sovereign_external_debt_default" placeholder="Enter sovereign_external_debt_default" required><br>
+        <input type="number" name="gdp_weighted_default" placeholder="Enter gdp_weighted_default" required><br>
+        <input type="number" name="inflation_annual_cpi" placeholder="Enter inflation_annual_cpi" required><br>
+        <input type="number" name="independence" placeholder="Enter independence" required><br>
+        <input type="number" name="currency_crises" placeholder="Enter currency_crises" required><br>
+        <input type="number" name="inflation_crises" placeholder="Enter inflation_crises" required><br>
+        <button type="submit">Predict Crisis</button>
+    </form>
+    <p>The predicted crisis is: {{ result }}</p>
+</body>
+</html>
