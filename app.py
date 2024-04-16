@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load your trained model (make sure to provide the correct file path)
-model = joblib.load('/Users/kenneth/Desktop/NTU/Year 2 Sem 2/BC3415 AI /Kenneth_Final_Grp_Project/Crisis Mgm Cloud/model.joblib')
+model = joblib.load('models/model.joblib')
 
 @app.route("/", methods=["GET", "POST"])
 def index():
